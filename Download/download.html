@@ -1,12 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-211884512-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-211884512-1');
+</script>
 </head>
 <body>
 <h1>Hello World</h1>
 <p>LightMeeting is hosted with GitHub Pages.</p>
     <p>
         &nbsp;</p>
-<p><a href="Help.pdf">Help Download</a></p>
+<a href="Help.pdf" target="_blank" onclick="gtag('event', 'clickto_download', {
+  'event_category' : 'file_download',
+  'event_label' : 'pdf_download'
+});">Download</a>
 </body>
 </html>
