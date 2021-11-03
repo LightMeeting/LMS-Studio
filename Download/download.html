@@ -11,12 +11,16 @@
   gtag('config', 'UA-211884512-1');
 </script>
 </head>
-<body>
+<body onload="
+gtag('event', 'onload_download', {
+  'event_category' : 'html_download',
+  'event_label' : 'page_download'
+});">
 <h1>Hello World</h1>
 <p>LightMeeting is hosted with GitHub Pages.</p>
     <p>
         &nbsp;</p>
-<a href="Help.pdf" target="_blank" onclick="gtag('event', 'clickto_download', {
+<a href="Help.pdf" target="_blank" onclick="gtag('event', 'onclick_download', {
   'event_category' : 'file_download',
   'event_label' : 'pdf_download'
 });">Download</a>
