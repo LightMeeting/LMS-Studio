@@ -11,25 +11,29 @@
 
   gtag('config', 'UA-211884512-1');
 </script>
-            <style type="text/css">
+        <style type="text/css">
             .auto-style1 {
                 width: 128px;
                 height: 128px;
             }
         </style>
 </head>
-<body>
+<body onload="
+gtag('event', 'onload_frontpage', {
+  'event_category' : 'file_frontpage',
+  'event_label' : 'page_frontpage'
+});">
 <h1>LMS Studio</h1>
 <p>LightMeeting is hosted with GitHub Pages.<br>
-    ¡°À´Ã×¹¤·»¡±ÔÚÕâ´Ë×÷¿Í¡£
+    â€œæ¥ç±³å·¥åŠâ€åœ¨è¿™æ­¤ä½œå®¢ã€‚
 </p>
     <p>&nbsp;</p>
 
-<h2>About LMS Studio (¹ØÓÚÀ´Ã×¹¤·»)</h2>
+<h2>About LMS Studio (å…³äºæ¥ç±³å·¥åŠ)</h2>
     This ongoing project is to develop an internet edge communication software for the Christian Community to have Bible Study and Fellowship online. The main idea is a non-centralized zoom-like meeting of an ultra-light server with a small number of multi-threading clients.<p>
         &nbsp;</p>
-<p><a href="Download/download.htm">Latest Release: LMS 1.0 (×îĞÂ°æ£ºLMS 1.0)</a></p>
-    <p><a href="Help/Help.html">Help Portal (°ïÖúÃÅ»§)</a></p>
+<p><a href="Download/download.htm">Latest Release: LMS 1.0 (æœ€æ–°ç‰ˆï¼šLMS 1.0)</a></p>
+    <p><a href="Help/Help.html">Help Portal (å¸®åŠ©é—¨æˆ·)</a></p>
 <a href="Download/Help.pdf" target="_blank" onclick="gtag('event', 'onclick_download', {
   'event_category' : 'file_download',
   'event_label' : 'exe_download'
@@ -37,8 +41,10 @@
 <a href="Download/Help.pdf" target="_blank" onclick="gtag('event', 'onclick_download', {
   'event_category' : 'file_download',
   'event_label' : 'exe_download'
-});">ÏÖÔÚÏÂÔØÖĞÎÄ°æ</a>
+});">ç°åœ¨ä¸‹è½½ä¸­æ–‡ç‰ˆ</a>
+    </p>
     <p>
-        &nbsp;</p>
-        <img alt="lms" class="auto-style1" longdesc="lms ico" src="Help/lms.png" /></p></body>
+        <img alt="lms" class="auto-style1" longdesc="lms icon" src="Help/lms.png" /></p>
+    <p>
+</body>
 </html>
