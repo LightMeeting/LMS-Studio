@@ -1,4 +1,14 @@
 <html><head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-211884512-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-211884512-1');
+</script>
 <title>Help Portal</title>
         <style type="text/css">
             .auto-style1 {
@@ -7,7 +17,11 @@
             }
         </style>
 </head>
-<body>
+<body onload="
+gtag('event', 'onload_helppage', {
+  'event_category' : 'file_helppage',
+  'event_label' : 'page_helppage'
+});">
 <p>English</p>
 <p><a href="en-US/eHelp.html">Help Portal</a></p>
 <p style="margin-left: 40px"><a href="en-US/eHelp.html#exactline1">1. About Light Meeting Studio.</a></p>
@@ -16,6 +30,8 @@
 <p style="margin-left: 40px"><a href="en-US/eHelp.html#exactline4">4. Start Meeting.</a></p>
 <p style="margin-left: 40px"><a href="en-US/eHelp.html#exactline5">5. Language Settings.</a></p>
 <p style="margin-left: 40px"><a href="en-US/eHelp.html#exactline6">6. Local Service Settings.</a></p>
+<p style="margin-left: 40px"><a href="en-US/eHelp.html#exactline7">7. Illustration of usage.</a></p>
+<p style="margin-left: 40px"><a href="en-US/eHelp.html#exactline8">8. Effective tips when Fellowship.</a></p>
     <p style="margin-left: 40px">&nbsp;</p>
     <p>中文</p>
 <p><a href="zh-CN/zHelp.html">帮助门户</a></p>
@@ -30,6 +46,8 @@
     <p style="margin-left: 40px">
         &nbsp;</p>
     <p>
-        <img alt="" class="auto-style1" src="lms.png" /></p>
+        <img alt="" class="auto-style1" src="lms.png" /><br>
+            <a href="mailto: lightmeeting@outlook.com">Email 电邮</a>
+    </p>
 </body>
 </html>
