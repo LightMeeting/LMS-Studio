@@ -1,6 +1,15 @@
 <html><head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>Help Portal</title>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-211884512-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-211884512-1');
+</script>
+<title>帮助门户</title>
         <style type="text/css">
             .auto-style1 {
                 width: 32px;
@@ -40,7 +49,11 @@
             }
         </style>
 </head>
-<body>
+<body onload="
+gtag('event', 'onload_helppage', {
+  'event_category' : 'file_helppage',
+  'event_label' : 'page_helppage'
+});">
 <p>&nbsp;</p>
         <table>
 	<tr>
@@ -68,31 +81,31 @@
     <p style="margin-left: 40px"><a name="exactline3">3、首次运行LMS</a></p>
     <p style="margin-left: 40px">请允许软件通过Windows防火墙。</p>
     <p style="margin-left: 40px">
-        <img alt="allow access" class="auto-style2" longdesc="allow its access through Windows firewall" src="e3.png" /></p>
+        <img alt="allow access" class="auto-style2" longdesc="allow its access through Windows firewall" src="z3.png" /></p>
     <p style="margin-left: 40px">&nbsp;</p>
     <p style="margin-left: 40px"><a name="exactline4">4、开始聚会</a></p>
     <p style="margin-left: 40px">1）在文件菜单下启动开始聚会命令，或者可以从控制台中心启动。</p>
-    <p style="margin-left: 40px">2）选择正确的圣经书目章节，然后点击确认键。</p>
+    <p style="margin-left: 40px">2）选择正确的圣经书目章节，然后点击确定键。</p>
     <p style="margin-left: 40px">
-        <img alt="Bible" class="auto-style3" longdesc="Bible-Book-Chapter-Verse" src="e4a.png" /></p>
+        <img alt="Bible" class="auto-style3" longdesc="Bible-Book-Chapter-Verse" src="z4a.png" /></p>
     <p style="margin-left: 40px">3）登录对话框有两种登录模式：主持人或者参会人</p>
     <p style="margin-left: 40px">&nbsp;选择正确的登录模式，键入您中意的用户名，点击应用键。</p>
     <p style="margin-left: 40px">
-        <img alt="Login Dialog" class="auto-style4" longdesc="Login Dialog" src="e4b.png" /></p>
+        <img alt="Login Dialog" class="auto-style4" longdesc="Login Dialog" src="z4b.png" /></p>
     <p style="margin-left: 40px">4）主持人模式</p>
     <p style="margin-left: 40px">请拷贝圣经章节（历代志上2:41-19:19 约翰福音8:10-12:50）与口令，分别发送给其他参会人员。</p>
     <p style="margin-left: 40px">
-        <img alt="Host mode" class="auto-style5" longdesc="Host mode success" src="e4c.png" /></p>
+        <img alt="Host mode" class="auto-style5" longdesc="Host mode success" src="z4c.png" /></p>
     <p style="margin-left: 40px">5）参会人模式</p>
     <p style="margin-left: 40px">请键入收到的口令。</p>
     <p style="margin-left: 40px">
-        <img alt="Attend mode" class="auto-style6" longdesc="Attend mode to input Passcode" src="e4d.png" /></p>
+        <img alt="Attend mode" class="auto-style6" longdesc="Attend mode to input Passcode" src="z4d.png" /></p>
     <p style="margin-left: 40px">&nbsp;</p>
     <p style="margin-left: 40px"><a name="exactline5">5、语言设置</a></p>
     <p style="margin-left: 40px">可以在文件菜单下找到设置。</p>
     <p style="margin-left: 40px">目前全面支持仅限于英语与中文，部分支持数十种其他语言。</p>
     <p style="margin-left: 40px">
-        <img alt="Settings" class="auto-style8" longdesc="Language Settings" src="e5.png" /></p>
+        <img alt="Settings" class="auto-style8" longdesc="Language Settings" src="z5.png" /></p>
     <p style="margin-left: 40px">&nbsp;</p>
     <p style="margin-left: 40px"><a name="exactline6">6、本地服务设置</a></p>
     <p style="margin-left: 40px">1）本地服务设置是为主持会议使用</p>
@@ -102,7 +115,7 @@
     <p style="margin-left: 40px">次要端口号将从主要端口号自动生成，公式为10 * 主要端口号 + 1。</p>
     <p style="margin-left: 40px">这两个端口是下文稍后您将允许的端口转发。</p>
     <p style="margin-left: 40px">
-        <img alt="Local Service Settings" class="auto-style7" longdesc="Local Service Settings for Host only" src="e6a.png" /></p>
+        <img alt="Local Service Settings" class="auto-style7" longdesc="Local Service Settings for Host only" src="z6a.png" /></p>
     <p style="margin-left: 40px">&nbsp;</p>
     <p style="margin-left: 40px">2）如何找到本地IPv4的公开地址</p>
     <p style="margin-left: 40px">A）点击“获取IP地址”键；</p>
@@ -120,7 +133,7 @@
     <p style="margin-left: 40px"><a href="http://192.168.1.1">http://192.168.1.1</a></p>
     <p style="margin-left: 40px">登录后，如下图进行端口转发，将默认主要端口号5150以及次要端口号51501的UDP流量转发到您的电脑（192.168.0.15）。或者也可以使用上文您中意的其他端口号。</p>
     <p style="margin-left: 40px">
-        <img alt="Port Forwarding" class="auto-style9" longdesc="Port Forwarding" src="e6b.png" /></p>
+        <img alt="Port Forwarding" class="auto-style9" longdesc="Port Forwarding" src="z6b.png" /></p>
     <p style="margin-left: 40px">&nbsp;</p>
     <p style="margin-left: 40px"><a name="exactline7">7、使用说明</a></p>
     <p style="margin-left: 40px">1）控制台</p>
@@ -144,7 +157,7 @@
     <p style="margin-left: 40px">3）读经阁</p>
     <p style="margin-left: 40px">读经阁是供您在大屏幕阅读圣经，无论是否开会。相比常用的读经软件，本读经阁的主要优势是一书一屏，让阅读圣经有整体感，方便关键词查询。</p>
     <p style="margin-left: 40px">&nbsp;</p>
-    <p style="margin-left: 40px"><a name="exactline8">8、团契时有效通讯的诀窍</a></p>
+    <p style="margin-left: 40px"><a name="exactline8">8、聚会时有效通讯的诀窍</a></p>
     <p style="margin-left: 40px">1）网络速度</p>
     <p style="margin-left: 40px">节省带宽是有效通讯的关键。当主持人在讲话时，参会人最好关闭他们各自的视频。</p>
     <p style="margin-left: 40px">默认音频速度是160 bit/s，默认视频速度是400 bit/s，总之为每个参会人员，LMS需要至少 70K Byte/s。至多8方需要单向560K Byte/s，以及双向1M Byte/s。</p>
@@ -161,6 +174,13 @@
     <p style="margin-left: 40px">5）如何修整回声</p>
     <p style="margin-left: 40px">您可以选择“停止音频”而关闭回声。</p>
     <p style="margin-left: 40px">&nbsp;</p>
+    <p style="margin-left: 40px">9、现存的问题</p>
+    <p style="margin-left: 40px">1）音频-视频延时</p>
+    <p style="margin-left: 40px">一般情况下，可能有两三秒延时。基于网络速度，可能有多达10秒钟的延时。</p>
+    <p style="margin-left: 40px">2）三方通讯不可靠</p>
+    <p style="margin-left: 40px">在某些网络状况下，三方通讯时，参会人员有可能听不清楚主持人讲话。</p>
+    <p style="margin-left: 40px">3）参会人发言通讯不可靠</p>
+    <p style="margin-left: 40px">在三方通讯时，当主持人允许某参会人发言时，其他参会人员可能听不清楚其发言。</p>
     <p style="margin-left: 40px">&nbsp;</p>
     <p style="margin-left: 40px">&nbsp;</p>
     <p style="margin-left: 40px">&nbsp;</p>

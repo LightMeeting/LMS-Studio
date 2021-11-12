@@ -1,6 +1,23 @@
 <!DOCTYPE html>
 <html>
-<body>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-211884512-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-211884512-1');
+</script>
+</head>
+<body onload="
+gtag('event', 'onload_helppage', {
+  'event_category' : 'file_helppage',
+  'event_label' : 'page_helppage'
+});">
+
 <script type="application/javascript">
   function getIP(json) {
     document.write("My public IP address is: ", json.ip);
