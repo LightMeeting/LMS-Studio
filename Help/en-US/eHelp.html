@@ -47,6 +47,10 @@
                 width: 1110px;
                 height: 592px;
             }
+            .auto-style10 {
+                width: 24px;
+                height: 24px;
+            }
         </style>
 </head>
 <body onload="
@@ -68,16 +72,32 @@ gtag('event', 'onload_helppage', {
     <p style="margin-left: 40px">Matthew 18:20 &quot;For where two or three come together in my name, there am I with them.&quot; </p>
     <p style="margin-left: 40px">This ongoing project is to develop an internet edge communication software for the Christian Community to have Bible Study and Fellowship online. The main idea is a decentralized Zoom-like meeting of an ultra-light host with a small number of multi-threading clients. </p>
     <p style="margin-left: 40px">Bible Study: Bible versions of English(NIV) and Chinese(CUVS) are embedded. Other language versions might be supported in the future. </p>
-    <p style="margin-left: 40px">Fellowship: Up to 8 participants are supported, with stable communication of two or three parties, depending on the network speed. Communication is limited to audio and video for now, and text-chatting will be supported in the next release. More stable participants might be supported in the future.</p>
-    <p style="margin-left: 40px">The latest software releases are English version(1.0.0) and Chinese version(1.0.1).</p>
+    <p style="margin-left: 40px">Fellowship: Up to 7 participants per party are supported, with stable communication of two or three parties, depending on the network speed, could support a small fellowship of 10-20 people. Communication is limited to audio, video and text-chatting. More stable participants might be supported in the future.</p>
+    <p style="margin-left: 40px">The latest software releases are English version(1.1.0) and Chinese version(1.1.1).</p>
+    <p style="margin-left: 40px">1.1) How does LMS work?</p>
+    <p style="margin-left: 40px">LMS works for a Host and a small number of Attendees.</p>
+    <p style="margin-left: 40px">Firstly, Host generates a Bible verse based on his Local Service Settings, works as a url for the meeting. The Bible verse looks like: &quot;1 Chronicles 2:41-19:19 John 8:10-12:50&quot;.</p>
+    <p style="margin-left: 40px">Secondly, Host initiates the meeting by connecting to the url, and get a Passcode for the meeting from LMS sytem. Host manually sends the Bible verse and Passcode separately to the Attendees using other communication tools such as email or texting. Passcode is a 6-digit number, for example 100227.</p>
+    <p style="margin-left: 40px">Thirdly, each Attendee joins the meeting by connecting to the url - Bible verse and Passcode.</p>
+    <p style="margin-left: 40px">1.2) Communication Structure</p>
+    <p style="margin-left: 40px">LMS has a tree-like communication sturcture, with Host sitting in the top of tree, and the rest of Attendees sitting in the branches of tree, with uppernode and lowernode. Only one person speaks at a time. Normally only Host speaks, and the rest of Attendees could speak through signalling.</p>
+    <p style="margin-left: 40px">1.3) Signalling Sytem: Host/Attendee signals by right-clicking on his rectangle box during the Meeting. </p>
+    <p style="margin-left: 40px">
+        <img alt="Host Clap" class="auto-style10" src="../icon/128.png" /> Host/Attendee Clap: welcome all to the meeting. Shinning Green-Light for a short while, no action required.</p>
+    <p style="margin-left: 40px">
+        <img alt="Handup" class="auto-style10" src="../icon/130.png" /> Attendee Hand Up: the Attendee ask to speak. Still Yellow-Light, notice Host there is some speak request.</p>
+    <p style="margin-left: 40px">
+        <img alt="Host Thumbup" class="auto-style10" src="../icon/132.png" /> Host Thumb Up: allow the Attendee to speak. Shinning Red-Light for a short while, notice there will be an Attendee speaking.</p>
+    <p style="margin-left: 40px">
+        <img alt="Attendee Thumbup" class="auto-style10" src="../icon/133.png" /> Attendee Thumb Up: allow Host to speak. Shinning Red-Light for a short while, notice there will be Host speaking again.</p>
     <p style="margin-left: 40px">&nbsp;</p>
     <p style="margin-left: 40px"><a name="exactline2">2. Where to download and how to install LMS?</a></p>
     <p style="margin-left: 40px">LMS currently supports Windows 10 x64 bit only. Android version will be planned in the near future.</p>
     <p style="margin-left: 40px">License policy is <a href="../lgpl-2.1.txt">GNU LESSER GENERAL PUBLIC LICENSE</a>.</p>
     <p style="margin-left: 40px">You may download LMS in <a href="https://lightmeeting.github.io/">lightmeeting.github.io</a>.</p>
-    <p style="margin-left: 40px">The default installation path of the executable is &quot;<a href="file:///C:/Program%20Files/LM%20Fellowship/LMS%20Studio/rundir/Release/bin/64bit/lm64.exe">C:\Program Files\LM Fellowship\LMS Studio\Release\bin\64bit\lm64.exe</a>&quot;,</p>
+    <p style="margin-left: 40px">The default installation path of the executable is &quot;<a href="file:///C:/Program%20Files/LM%20Fellowship/LMS%20Studio/Release/LMS_Studio.exe">C:\Program Files\LM Fellowship\LMS Studio\Release\LMS_Studio.exe</a>&quot;,</p>
 <p style="margin-left: 40px">where &quot;Release&quot; refers to version number, such as 1.0.0 for the first release.</p>
-    <p style="margin-left: 40px">In case you uninstall LMS, the program will be removed, however, your settings data, will remain in the default directory of &quot;<a href="file:///C:/Users/Username/AppData/Roaming/lms-studio">C:\Users\Username\AppData\Roaming\lms-studio</a>&quot;,</p>
+    <p style="margin-left: 40px">In case you uninstall LMS, the program will be removed, however, your settings data, will remain in the default directory of &quot;<a href="file:///C:/Users/Username/AppData/Roaming/LightMeeting">C:\Users\Username\AppData\Roaming\LightMeeting</a>&quot;,</p>
     <p style="margin-left: 40px">where &quot;Username&quot; refers to your Windows login name. You might want to remove it manually.</p>
     <p style="margin-left: 40px">&nbsp;</p>
     <p style="margin-left: 40px"><a name="exactline3">3. First run of LMS.</a></p>
@@ -139,10 +159,10 @@ gtag('event', 'onload_helppage', {
     <p style="margin-left: 40px">&nbsp;</p>
     <p style="margin-left: 40px">7<a name="exactline7">. Illustration of usage.</a></p>
     <p style="margin-left: 40px">1) Control panel</p>
-    <p style="margin-left: 40px">A) Control panel is the default panel. In the top-left, there is Speaker-preview window, and in the top-right, there is Me-view window.</p>
-    <p style="margin-left: 40px">Before the meeting, Speaker-preview is for you to setup your video, and you might manually drag the rectangle of video to fit the Speaker-preview window. After you adjust your video, you might click on &quot;Fix My Video&quot; button, to transit your video from Speaker-preview window to Me-view window.</p>
-    <p style="margin-left: 40px">During the meeting, Speaker-preview is for you to setup Speaker&#39;s video, and you might manually drag the rectangle of video to fit the Speaker-preview screen. After you adjust Speaker&#39;s video, you might find it is also adjusted under Meeting panel.</p>
-    <p style="margin-left: 40px">While the Speaker is speaking, if you want to read the Bible verses he refers to, you are able to read your Bible version below Speaker-preview window. In addition, you are able to do full-screen projector by right-clicking on the rectangle, if you are enjoying his talk or want to view his sharing of screen.</p>
+    <p style="margin-left: 40px">A) Control panel is the default panel. In the top-left, there is Speaker-preview window.</p>
+    <p style="margin-left: 40px">Before the meeting, Speaker-preview is for you to setup your video. After you adjust your video, you might click on &quot;Fix My Audio/Video&quot; button, to transit your video.</p>
+    <p style="margin-left: 40px">During the meeting, Speaker-preview is for you to setup Speaker&#39;s video. After you adjust Speaker&#39;s video, you might find it is also adjusted under Meeting panel.</p>
+    <p style="margin-left: 40px">While the Speaker is speaking, if you want to read the Bible verses he refers to, you are able to read your Bible version below Speaker-preview window. </p>
     <p style="margin-left: 40px">B) Audio: 3 options for audio input</p>
     <p style="margin-left: 40px">Audio Muted: no audio input.</p>
     <p style="margin-left: 40px">Microphone: audio input is from your computer default Microphone.</p>
@@ -150,41 +170,45 @@ gtag('event', 'onload_helppage', {
     <p style="margin-left: 40px">C) Video: 5 options for video input</p>
     <p style="margin-left: 40px">Video Stopped: no video input.</p>
     <p style="margin-left: 40px">Camera: video input is from Camera of your choice.</p>
-    <p style="margin-left: 40px">Display: video input is from your computer Display monitor of your choice.</p>
+    <p style="margin-left: 40px">Display: video input is from your computer Display monitor of your choice.(Currently only one Display is supported)</p>
     <p style="margin-left: 40px">Image: static picture input is from your computer Image file of your choice.</p>
-    <p style="margin-left: 40px">Window: video input is from your active Window of your choice.</p>
+    <p style="margin-left: 40px">Window: video input is from your active Window of your choice.(Yet to be supported)</p>
     <p style="margin-left: 40px">2) Meeting panel</p>
     <p style="margin-left: 40px">Meeting panel is the panel used during the meeting. You might be able to see faces of other participants in addition to Speaker.</p>
-    <p style="margin-left: 40px">Under the Meeting panel, Host uses it to coordinate speeches from participants. Host clicks on an Attendee window, and allows the Attendee to talk to the rest of participants.</p>
+    <p style="margin-left: 40px">Under the Meeting panel, Host uses it to coordinate speeches from participants. Host right-clicks on his own rectangle box menu, and chooses an Attendee to talk to the rest of participants.</p>
+    <p style="margin-left: 40px">After the Attendee completes his talk, he might right-clicks on his rectangle box menu, to allow Host to speak. Or Host might right-clicks on his rectangle box menu, to allow Host himself to speak again.&nbsp; </p>
+    <p style="margin-left: 40px">In addition, you are able to do full-screen projector by double-clicking on the rectangle, if you are enjoying the talk of Speaker or want to view his sharing of screen.</p>
     <p style="margin-left: 40px">3) Bible panel</p>
-    <p style="margin-left: 40px">Bible panel is for you to read your Bible version in a large screen， regardless meeting. Compared to other Bible software, LMS displays Bible by Book instead of Chapter. It gives readers a sense of complete Book, and helps readers to do keyword search easily.</p>
+    <p style="margin-left: 40px">Bible panel is for you to read your Bible version in a large screen， regardless meeting. Compared to other Bible software, LMS presents Bible by Book instead of Chapter. It gives readers a sense of complete Book, and helps readers to do keyword search easily.</p>
     <p style="margin-left: 40px">&nbsp;</p>
-    <p style="margin-left: 40px">8<a name="exactline8">. Effective tips when Meeting.</a></p>
+    <p style="margin-left: 40px">8<a name="exactline8">. Useful tips when Meeting.</a></p>
     <p style="margin-left: 40px">1) Network Speed</p>
-    <p style="margin-left: 40px">Bandwidth conservation is the key for an effective communication. Attendees are encouraged to close their video when Host is speaking.</p>
-    <p style="margin-left: 40px">Default audio speed is 160 bit/s, and default video speed is 400 bit/s, in sum LMS requires at least 70K Byte/s for a basic communication per participant. Up to 8 participants will require 560K Byte/s in one-way, and 1M Byte/s in two-way communication.</p>
+    <p style="margin-left: 40px">Bandwidth conservation is the key for an effective communication. Attendees are encouraged to close their audio/video when Host is speaking.</p>
+    <p style="margin-left: 40px">Default audio speed is 160 bit/s, and default video speed is 400 bit/s, in sum LMS requires at least 70K Byte/s for a basic communication per participant. Up to 7 participants will require 500K Byte/s in one-way, and 1M Byte/s in two-way communication.</p>
     <p style="margin-left: 40px">2) Communication Order</p>
     <p style="margin-left: 40px">Current software recommends one person speaks at a time during the meetings.</p>
     <p style="margin-left: 40px">Normally, only Host talks to the rest of participants.</p>
-    <p style="margin-left: 40px">Under the Meeting panel, Host uses it to coordinate speeches from participants. Host clicks on an Attendee window, and allows the Attendee to talk to the rest of participants.</p>
+    <p style="margin-left: 40px">Under the Meeting panel, Host uses it to coordinate speeches from participants. </p>
+    <p style="margin-left: 40px">Host right-clicks on his own rectangle box menu, and chooses an Attendee to talk to the rest of participants.</p>
+    <p style="margin-left: 40px">After the Attendee completes his talk, he might right-clicks on his rectangle box menu, to allow Host to speak. Or Host might right-clicks on his rectangle box menu, to allow Host himself to speak again.&nbsp; </p>
     <p style="margin-left: 40px">3) How to fix My video</p>
-    <p style="margin-left: 40px">If LMS is not able to find your camera at first run, and you know you have a Camera. Please reboot the computer, and restart LMS, and you may find your Camera now.</p>
-    <p style="margin-left: 40px">If My video is too small, you might manually drag the rectangle of video to fit the Speaker-preview window. </p>
+    <p style="margin-left: 40px">If LMS is not able to find your camera at first run, and you know you have a Camera. Please reboot the computer, and restart LMS, and you might find your Camera now.</p>
     <p style="margin-left: 40px">4) How to fix Speaker&#39;s video</p>
-    <p style="margin-left: 40px">A) If the Speaker is an Attendee, click on the corresponding box under Meeting panel, and go back to Control panel. </p>
-    <p style="margin-left: 40px">B) You might manually drag the rectangle of video to fit the Speaker-preview window. After you adjust Speaker&#39;s video, you might find it is also adjusted under Meeting panel.</p>
-    <p style="margin-left: 40px">C) In addition, you are able to do full-screen projector by right-clicking on the rectangle, if you are enjoying his talk or want to view his sharing of screen.</p>
+    <p style="margin-left: 40px">If the Speaker&#39;s video is blurred, right-click on the corresponding rectangle box, and click on the &quot;Restart Player&quot; submenu.</p>
     <p style="margin-left: 40px">5) How to fix Echo</p>
-    <p style="margin-left: 40px">You might choose &quot;Audio Muted&quot; to silence any Echo.</p>
+    <p style="margin-left: 40px">Double-click on any rectangle box will have its Audio Muted/Unmuted.</p>
+    <p style="margin-left: 40px">You might double-click on your rectangle box to have &quot;Audio Muted&quot; to silence any Echo.</p>
     <p style="margin-left: 40px">&nbsp;</p>
     <p style="margin-left: 40px">9<a name="exactline9">. Known Issues.</a></p>
     <p style="margin-left: 40px">1) Audio/Video Delay</p>
-    <p style="margin-left: 40px">Under normal condition, there are two or three seconds delay. Up to 10 seconds of delay might be experienced, depending on network speed.</p>
+    <p style="margin-left: 40px">Under normal condition, there are two or three seconds delay. More than 10 seconds of delay might be experienced, depending on network speed.</p>
     <p style="margin-left: 40px">2) Unreliable communication for three parties</p>
-    <p style="margin-left: 40px">Even with three parties, sometimes Attendees might not hear Host speaks clearly, under certain network condition.</p>
+    <p style="margin-left: 40px">With three parties, sometimes Attendees might not hear Host speaks clearly, under certain network condition.</p>
     <p style="margin-left: 40px">3) Unreliable communication when an Attendee speaks</p>
-    <p style="margin-left: 40px">With three parties, other audience might not hear an Attendee speaks, even Host allows him to speak to the audience.</p>
-    <p style="margin-left: 40px">&nbsp;</p>
+    <p style="margin-left: 40px">With three parties, sometimes other audience might not hear an Attendee speaks, even Host allows him to speak to the audience.</p>
+    <p style="margin-left: 40px">4) Connection problem</p>
+    <p style="margin-left: 40px">Sometimes an Attendee is not able to connect to due to input wrong Bible verse and Passcode.</p>
+    <p style="margin-left: 40px">Sometimes after Attendee sees the login success window, he is still not able to connect to the meeting, due to various problems, including bandwidth constraints. Please wait for a minute or two, restart LMS and try again. Good Luck!</p>
     <p style="margin-left: 40px">&nbsp;</p>
     <p style="margin-left: 40px">&nbsp;</p>
     <p style="margin-left: 40px">&nbsp;</p>
