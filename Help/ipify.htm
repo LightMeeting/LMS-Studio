@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+	My public IP address is(我的IP公开地址是)
+	<p id="myLabel"></p>
+	<button onclick="myFunction()">Copy(复制)</button>
+	<script type="application/javascript">
+				function getIP(json) {
+				  //document.write("My public IP address is: ", json.ip);
+				  //document.write("<p>我的IP公开地址是: ", json.ip);
+				var copyText = document.getElementById("myLabel");
+				copyText.textContent = json.ip;
+
+				navigator.clipboard.writeText(json.ip);
+				//alert(json.ip);
+				}
+
+		function myFunction() {
+		  // Get the text field
+		  var copyText = document.getElementById("myLabel");
+
+		  // Select the text field
+		  //copyText.select();
+		  //copyText.setSelectionRange(0, 99999); // For mobile devices
+
+		  // Copy the text inside the text field
+		  navigator.clipboard.writeText(copyText.textContent);
+
+		  // Alert the copied text
+		  //alert("Copied the text: " + copyText.textContent);
+		}	</script>
+
+	<script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
+</body>
+</html>
